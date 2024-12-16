@@ -77,7 +77,15 @@ The TCPDUMP analysis project aimed to familiarize users with the installation an
 
 ---
 
-### Step 4: Advanced Filters
+### Step 4: Create a Folder Named "capture" in Your Home Directory
+
+- Create a new directory called "capture":
+  ```bash
+  mkdir ~/capture
+
+---
+
+### Step 5: Advanced Filters
 
 - To capture traffic for a specific host:
   ```bash
@@ -88,21 +96,11 @@ The TCPDUMP analysis project aimed to familiarize users with the installation an
   tcpdump -i eth0 tcp port 80
   ```
 
-- To write captured traffic to a file:
+- To write captured traffic to a file in your new directory:
   ```bash
-  tcpdump -i eth0 -w /home/cyber/http-cap.pcap tcp port 80
+  tcpdump -i eth0 -w ~/capture/http-cap.pcap tcp port 80
   ```
 ---
-
-### Step 5: Project Tasks
-
-1. Identify the interface for traffic capture on LAB-NET.
-2. Capture all traffic and stop the capture.
-3. Create a folder named "capture" in your home directory.
-4. Capture all HTTPS traffic on TCP Port 443.
-5. Capture all DNS traffic on TCP Port 53, save as dns-traffic.pcap, then browse to kali.org.
-6. Repeat tasks on Windows Server 2019/2022.
-7. Create a custom capture using TCPDUMP, ensuring to delete unnecessary files afterward.
 
 ## Conclusion
 
